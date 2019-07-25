@@ -1,0 +1,9 @@
+<h3>You are currently logged in!</h3>
+
+<img src="{{ user.image.url }}">
+
+<p><strong>Username:</strong> {{user.username}}<br>
+<strong>E-mail:</strong> {{user.email}}<br>
+<strong>Mobile:</strong> {{user.mobile_no}}</p>
+<br>
+<a href="{% url 'sign_up' %}"><input type="submit" value="Logout"></a>
